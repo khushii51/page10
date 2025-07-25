@@ -1,0 +1,151 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 30px;
+  color: #1a1a1a;
+}
+
+.order-container {
+  max-width: 850px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff9e5;
+  border: 1px solid #ffebcc;
+  padding: 16px 24px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.order-id {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.order-meta {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.order-total {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0b93f6;
+}
+
+.expected {
+  font-size: 14px;
+  margin: 20px 0 10px;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 10px 0;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #f68b1e30;
+  z-index: 0;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 3px solid #f68b1e;
+  border-radius: 50%;
+  margin: 0 auto 6px;
+}
+
+.step.active .circle {
+  background: #f68b1e;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.label img {
+  margin-bottom: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e6e6e6;
+  margin: 30px 0 20px;
+}
+
+.activity-section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.activity {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.activity .icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e8f0fe;
+  color: #4285f4;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+
+.icon.green {
+  background: #e6f4ea;
+  color: #34a853;
+}
+
+.activity p {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.activity span {
+  font-size: 13px;
+  color: #777;
+}
